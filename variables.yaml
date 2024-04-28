@@ -1,0 +1,9 @@
+- name : variable decalaration and access
+  hosts : localhost
+  var :
+    course : "ansible"
+    trainer : "sivakumar"
+    duration : "120hrs"
+  tasks :
+    - name : ansible.builtin.debug:
+      msg : " Hi, We are learning {{course}} from {{trainer}}  ,duration is {{duration}} "
