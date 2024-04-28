@@ -2,7 +2,7 @@
   hosts  :
   tasks:
   - name : print information 
-  ansible.builtin.debug:
     var :
      timings : "07:15 am"
+  ansible.builtin.debug:
     msg : Hi , I am learning {{course}} from {{trainer}} duration is {{duration}} and timings {{timings}}
