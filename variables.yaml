@@ -1,4 +1,4 @@
-- name : variable decalaration and access
+- name : variables 
   hosts : localhost
   var :
     course : "ansible"
