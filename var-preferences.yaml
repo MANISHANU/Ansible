@@ -2,7 +2,7 @@
   hosts : localhost
   vars:
    WHISHES : good morning from play vars
-   
+
   vars-files : 
   - vars.yaml
   
@@ -12,9 +12,9 @@
     private : false
 
   tasks :
-   - name: vars from task
-     vars :
+  - name: vars from task
+    vars :
       WISHES : "Good Morning" 
-    ansible.builtin.debug:
+  ansible.builtin.debug:
      msg : Good {{WISHES}}
   
