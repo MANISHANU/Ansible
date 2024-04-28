@@ -3,10 +3,10 @@
   vars:
    WHISHES : good morning from play vars
 
-  vars-files : 
+  vars_files : 
   - vars.yaml
   
-  vars-promot :
+  vars_promot :
   - name : WISHES
     prompt : please enter var value
     private : false
