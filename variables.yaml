@@ -1,6 +1,6 @@
 - name : variables 
   hosts : localhost
-  var :
+  vars :
     course : "ansible"
     trainer : "sivakumar"
     duration : "120hrs"
