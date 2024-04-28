@@ -11,10 +11,10 @@
     prompt : please enter var value
     private : false
 
-   tasks :
-   - name: vars from task
-     vars :
+  tasks :
+  - name: vars from task
+    vars :
       WISHES : "Good Morning" 
-   ansible.builtin.debug:
+    ansible.builtin.debug:
      msg : Good {{WISHES}}
   
