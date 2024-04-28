@@ -2,5 +2,5 @@
   hosts : localhost
   tasks :
   - name : vars from args
-  ansible.builtin.debug:
-   msg : Hi I'm learning {{course}} from {{trainer}}
+    ansible.builtin.debug:
+     msg : Hi I'm learning {{course}} from {{trainer}}
