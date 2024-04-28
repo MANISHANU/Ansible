@@ -14,5 +14,5 @@
   tasks :
   - name : data types in ansible
     ansible.builtin.debug:
-      msg: Hi , we are learning {{course}} ,tools covered in this course are {{Tools}} and Experience is {{Experience}}
+      msg: Hi , we are learning {{course}} ,tools covered in this course are {{Tools}} and Experience is {{Experience}} is a Realtime Project {{Realtime}}
 
