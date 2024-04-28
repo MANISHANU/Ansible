@@ -1,19 +1,20 @@
 - name : variable preferences
   hosts : localhost
   vars:
-   -name : good morning from play vars
+   WHISHES : good morning from play vars
+   
   vars-files : 
   - vars.yaml
-  vars-inventory : WHISHES
+  
   vars-promot :
-  - name : please enter var value
-    prompt : WISHES
+  - name : WISHES
+    prompt : please enter var value
+    private : false
+
   tasks :
    - name: vars from task
-   ansible.builtin.debug:
      vars :
       WISHES : "Good Morning" 
-  vars-args :
-   ansible.builtin.debug:
-    msg : Good {{WISHES}}
-   
+    ansible.builtin.debug:
+     msg : Good {{WISHES}}
+  
