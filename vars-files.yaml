@@ -1,7 +1,7 @@
 - name : varibles declaration with files
   hosts : localhost
   vars_files :
-   vars.yaml 
+   - vars.yaml 
   tasks : 
    - name : print information
     ansible.builtin.debug:
