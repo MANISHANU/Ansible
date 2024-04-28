@@ -1,0 +1,18 @@
+- name : data types 
+  hosts : localhost
+  vars : 
+   course : Devops with aws # string
+   Tools : #list
+   - Linux
+   - shell 
+   - ansible 
+   Experience : #map or dictionary
+    Devops : 5
+    AWS : 3
+    Terraform : 1
+   Realtime: true #boolean
+  tasks :
+  - name : data types in ansible
+    ansible.builtin.debug:
+      msg: Hi , we are learning {{course}} ,tools covered in this course are {{Tools}} and Experience is {{Experience}}
+
