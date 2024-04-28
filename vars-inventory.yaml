@@ -1,7 +1,8 @@
 - name : variables from inventory
   hosts  :
   tasks:
-   var :
-    timings : "07:15 am"
   - name : print information 
-     msg : Hi , I am learning {{course}} from {{trainer}} duration is {{duration}} and timings {{timings}}
+  ansible.builtin.debug:
+    var :
+     timings : "07:15 am"
+    msg : Hi , I am learning {{course}} from {{trainer}} duration is {{duration}} and timings {{timings}}
