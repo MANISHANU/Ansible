@@ -6,7 +6,7 @@
   vars_files : 
   - vars.yaml
   
-  vars_promot :
+  vars_prompt :
   - name : WISHES
     prompt : please enter var value
     private : false
