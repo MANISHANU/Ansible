@@ -10,16 +10,16 @@
     - linux 
 
 
-- name : install packages 
-  hosts : localhost
-  become : yes 
-  tasks :
-  - name : loops 
-  ansible.builtin.dnf:
-   name : "{{item}}"
-   state : latest
-   msg: "{{item}} installed"
-  loop:
-  - ansible
-  - nginx
-  
+
+- name: install packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix
