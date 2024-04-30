@@ -1,0 +1,23 @@
+- name : loops in ansible
+  hosts : localhost 
+  tasks :
+  - name : loops 
+    ansible.builtin.debug:
+     msg : Hi "{{item}}"
+    loop :
+    - shell
+    - ansible
+    - linux 
+
+
+- name : install packages 
+  hosts : localhost
+  become : yes 
+  tasks :
+  - name : loops 
+  ansible.builtin.dnf:
+   msg: "{{item}}" installed
+  loop:
+  - ansible
+  - nginx
+  
