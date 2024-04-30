@@ -1,6 +1,6 @@
 - name : default value 
   hosts : localhost
-  vars :
-   -name :  course 
+  tasks :
+  - name : print default value   
     ansible.builtin.debug:
      msg : {{ course | default('ansible') }}
