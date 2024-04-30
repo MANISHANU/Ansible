@@ -1,0 +1,18 @@
+- name : filters 
+  host : localhost
+  var_prompt :
+   -name : number # values given in prompt consider as string 
+    prompt : please enter a number 
+    private : no 
+  tasks :
+  - name : number is less than 10
+    ansible.builtin.debug:
+     msg : Given number {{number}} is less than 10 
+    when : number | < 10 # pipe symbol converts given value into int 
+
+  - name : number is greater than or equal to 10 
+    ansible.builtin.debug:
+     msg: Given number {{number}} is greater than or equal to 10
+    when : number | >= 10
+
+  
