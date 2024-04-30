@@ -1,5 +1,5 @@
-- name : filters 
-  host : localhost
+- name : contions and filters 
+  hosts : localhost
   vars_prompt :
   - name : number # values given in prompt consider as string 
     prompt : please enter a number 
