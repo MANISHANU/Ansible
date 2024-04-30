@@ -16,9 +16,9 @@
   tasks :
   - name : loops 
   ansible.builtin.dnf:
-  - name : "{{item}}"
-  = state : latest
-    msg: "{{item}} installed"
+   name : "{{item}}"
+   state : latest
+   msg: "{{item}} installed"
   loop:
   - ansible
   - nginx
