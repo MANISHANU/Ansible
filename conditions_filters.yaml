@@ -1,6 +1,6 @@
 - name : filters 
   host : localhost
-  var_prompt :
+  vars_prompt :
    -name : number # values given in prompt consider as string 
     prompt : please enter a number 
     private : no 
