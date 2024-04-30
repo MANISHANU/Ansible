@@ -21,7 +21,7 @@
   tasks :
   - name : convert to lower case
     ansible.builtin.debug:
-     msg : "{{ greetings | lower }}"
+     msg : "{{ greetings | lower }}" #lower
 
 - name : remove duplicates 
   hosts : localhost
@@ -30,7 +30,7 @@
   tasks : 
   - name : remove duplicate numbers from list 
     ansible.builtin.debug:
-     msg : "{{ numbers | unique }}"
+     msg : "{{ numbers | unique }}" #unique
 
 - name : max number from list 
   hosts : localhost
@@ -39,4 +39,13 @@
   tasks :
   - name : max value 
     ansible.builtin.debug:
-     msg: "{{ age | max }}"
+     msg: "{{ age | max }}" #"max"
+
+- name : min value from list  
+  hosts: localhost 
+  vars: 
+   age  : [ 1, 6, 56, 75, 99 ]
+  tasks :
+  - name : min value 
+    ansible.builtin.debug:
+     msg: "{{ age | min }}" #min 
