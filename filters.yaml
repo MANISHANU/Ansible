@@ -20,5 +20,5 @@
    greetings : Love You Ram
   tasks :
   - name : convert to lower case
-  ansible.builtin.debug:
-    msg : "{{ greetings | lower }}"
+    ansible.builtin.debug:
+     msg : "{{ greetings | lower }}"
