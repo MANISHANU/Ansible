@@ -55,7 +55,7 @@
   vars :
    my_love : 
     - { key : "name" , value : "ram" }
-    - { key : "age , value : "31" }
+    - { key : "relation" , value : "hubby" }
   tasks :
   - name  : list to dict
     ansible.builtin.debug:
