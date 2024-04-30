@@ -3,7 +3,7 @@
   tasks :
   - name : loops 
     ansible.builtin.debug:
-     msg : Hi "{{item}}"
+     msg : "Hi {{item}}"
     loop :
     - shell
     - ansible
@@ -16,7 +16,7 @@
   tasks :
   - name : loops 
   ansible.builtin.dnf:
-   msg: "{{item}}" installed
+   msg: "{{item}} installed"
   loop:
   - ansible
   - nginx
