@@ -15,7 +15,7 @@
      msg : "{{ greetings | upper }}"    #upper
 
 - name : lower case 
-  hosts :
+  hosts : localhost
   vars : 
    greetings :  Love You Ram
   tasks : convert to lower case
