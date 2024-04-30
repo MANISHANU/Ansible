@@ -49,3 +49,27 @@
   - name : min value 
     ansible.builtin.debug:
      msg: "{{ age | min }}" #min 
+
+- name :  items to dictionary 
+  hosts : localhosts
+  vars :
+   my_love : 
+    - { key : "name" , value : "ram" }
+    - { key : "age , value : "31" }
+  tasks :
+  - name  : list to dict
+    ansible.builtin.debug:
+     msg : "{{ myy_love | items2dict }}"
+
+
+- name : dictionary to items 
+  hosts : localhost
+  vars :
+   my_dict:
+    course : Devops
+    trainer : siva 
+    duration : 120
+  tasks :
+  - name : dict to list 
+    ansible.builtin.debug:
+     msg : "{{ my_dict | dict2items }}"
