@@ -54,12 +54,12 @@
   hosts : localhost
   vars :
    my_love : 
-    - { key : "name" , value : "ram" }
-    - { key : "relation" , value : "hubby" }
+    - { 'key' : 'name','value' : 'ram' }
+    - { 'key' : 'relation','value' : 'hubby' }
   tasks :
   - name  : list to dict
     ansible.builtin.debug:
-     msg : "{{ myy_love | items2dict }}"
+     msg : "{{ my_love | items2dict }}"
 
 
 - name : dictionary to items 
