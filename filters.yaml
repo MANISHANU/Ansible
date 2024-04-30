@@ -3,7 +3,7 @@
   tasks :
   - name : print default value   
     ansible.builtin.debug:
-     msg : "{{ course | default('ansible') }}"
+     msg : "{{ course | default('ansible') }}" #default
 
 - name : upper case
   hosts : localhost
@@ -12,4 +12,4 @@
   tasks :
   - name: convert to upper case
     ansible.builtin.debug:
-     msg : "{{ greetings | uppercase }}"    
+     msg : "{{ greetings | upper }}"    #upper
