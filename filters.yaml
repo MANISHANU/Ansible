@@ -51,7 +51,7 @@
      msg: "{{ age | min }}" #min 
 
 - name :  items to dictionary 
-  hosts : localhosts
+  hosts : localhost
   vars :
    my_love : 
     - { key : "name" , value : "ram" }
